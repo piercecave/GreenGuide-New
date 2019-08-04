@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Green Guide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="about_us_1">
+        Green Guide Inc. was founded in 2015 in Seattle, USA. With the help of Microsoft and Guiyang Municipal Government of China,
+        Green Guide Inc. established the Guizhou Love Green Evaluation Service Co., Ltd. in Guiyang, China in 2016.
+    </string>
+
+    <string name="about_us_2">
+        www.lovegreenguide.com was officially launched in China for public use in January 2017.
+    </string>
+
+    <string name="about_us_3">
+        Guizhou Love Green Evaluation Internet Service Co., Ltd. is committed to the application of information
+        technology to practice the green supply chain. Promoting participation, sharing and integration of environmental
+        messages by all citizens has become an aid to the improvement of the environment.
+    </string>
+    <string name="histogram_description">Sideways Histogram</string>
+    <string name="Rating_Stars_Description">Displays similar content to a RatingBar</string>
+    <string name="explore_button_text">Explore Reviews</string>
+    <string name="write_review_button_text">Write a Review</string>
+    <string name="write_first_review_button_text">Write the First Review</string>
+    <string name="btmsheet_company_name_default">Company Name</string>
+    <string name="btmsheet_rating_value_default">+3.0</string>
+    <string name="btmsheet_ratings_count_default">(134)</string>
+    <string name="poi_results_retry">Retry</string>
+    <string name="list_item_other">Other</string>
+
+    <string name="title_activity_view_one_review">ViewOneReview</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="log_in_text">Log In</string>
+    <string name="log_out_text">Log Out</string>
+
+    <string name="preference_file_credentials">preference_file_user_credentials</string>
+    <string name="preference_credentials_token">token</string>
+    <string name="preference_credentials_user_name">username</string>
+
+    <string name="general_info_address_label">Address:</string>
+    <string name="general_info_city_label">City:</string>
+    <string name="general_info_industry_label">Industry:</string>
+    <string name="general_info_product_label">Product:</string>
+
+    <string name="general_review_name_label">Name:</string>
+    <string name="general_review_rating_label">Rating:</string>
+    <string name="general_review_address_label">Address:</string>
+    <string name="general_review_city_label">City:</string>
+    <string name="general_review_industry_label">Industry:</string>
+    <string name="general_review_product_label">Product:</string>
+    <string name="general_review_date_label">Date:</string>
+    <string name="general_review_time_label">Time:</string>
+    <string name="general_review_weather_label">Weather:</string>
+
+    <string name="water_review_body_label">Body Type:</string>
+    <string name="water_review_color_label">Color:</string>
+    <string name="water_review_turbidity_label">Turbidity:</string>
+    <string name="water_review_odor_label">Odor:</string>
+    <string name="water_review_float_label">Float:</string>
+    <string name="water_review_ph_label">PH:</string>
+
+    <string name="air_review_visibility_label">Visibility:</string>
+    <string name="air_review_odor_label">Odor:</string>
+    <string name="air_review_smoke_label">Smoke:</string>
+    <string name="air_review_discomfort_label">Physical Discomfort:</string>
+    <string name="air_review_pm2_5_label">PM 2.5 (ug/m3):</string>
+    <string name="air_review_pm10_label">PM 10 (ug/m3):</string>
+
+    <string name="waste_review_type_label">Waste Type:</string>
+    <string name="waste_review_amount_label">Waste Amount:</string>
+    <string name="waste_review_odor_label">Odor:</string>
+    <string name="waste_review_info_label">More Info:</string>
+
+</resources>

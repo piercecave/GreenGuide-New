@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guide.green.green_guide_master">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.INTERNET" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //鉴权所需该权限获取进程列表
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Permission will be requested at runtime -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.guide.green.green_guide_master.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="greenguide"
+                    android:scheme="open" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guide.green.green_guide_master.ResultDetail"
+            android:label="ResultDetail"
+            android:parentActivityName="com.guide.green.green_guide_master.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.guide.green.green_guide_master.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.guide.green.green_guide_master.FragmentContainerActivity"
+            android:label="Green Guide"
+            android:parentActivityName="com.guide.green.green_guide_master.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.guide.green.green_guide_master.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.guide.green.green_guide_master.WriteReviewActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Write a Review"
+            android:parentActivityName="com.guide.green.green_guide_master.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.guide.green.green_guide_master.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.guide.green.green_guide_master.LogInOutSignUpActivity"
+            android:label="Green Guide"
+            android:parentActivityName="com.guide.green.green_guide_master.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.guide.green.green_guide_master.MainActivity" />
+        </activity>
+
+        <!---<meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vyQ8H9HuUFD5kZiG9sjfpzGd6YDnojRV" />-->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GUpGNMekZ5mCtFU8P5e2Gp2UhWnhwT3g" />
+
+        <activity
+            android:name="com.guide.green.green_guide_master.ViewOneReview"
+            android:label="@string/title_activity_view_one_review"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.guide.green.green_guide_master.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.guide.green.green_guide_master.LocationInfoActivity"
+            android:label="Location Info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.guide.green.green_guide_master.MainActivity" />
+        </activity>
+        <activity android:name="com.guide.green.green_guide_master.EditImagesActivity"></activity>
+    </application>
+
+</manifest>
